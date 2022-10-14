@@ -23,6 +23,13 @@
 		04A012CB28F9692A0014EED0 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C428F9692A0014EED0 /* ServiceError.swift */; };
 		04A012CC28F9692A0014EED0 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C528F9692A0014EED0 /* ImageCacher.swift */; };
 		04A012CD28F9692A0014EED0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C628F9692A0014EED0 /* EndPoint.swift */; };
+		04A012D728F969B00014EED0 /* PeopleResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012CF28F969B00014EED0 /* PeopleResponce.swift */; };
+		04A012D828F969B00014EED0 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D028F969B00014EED0 /* PeopleTableViewCell.swift */; };
+		04A012D928F969B00014EED0 /* PeoplesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D128F969B00014EED0 /* PeoplesViewModel.swift */; };
+		04A012DA28F969B00014EED0 /* PeoplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D228F969B00014EED0 /* PeoplesViewController.swift */; };
+		04A012DB28F969B00014EED0 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D328F969B00014EED0 /* People.swift */; };
+		04A012DC28F969B00014EED0 /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D528F969B00014EED0 /* PeopleDetailsViewController.swift */; };
+		04A012DD28F969B00014EED0 /* PeopleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012D628F969B00014EED0 /* PeopleDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		04A012C428F9692A0014EED0 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		04A012C528F9692A0014EED0 /* ImageCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
 		04A012C628F9692A0014EED0 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		04A012CF28F969B00014EED0 /* PeopleResponce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleResponce.swift; sourceTree = "<group>"; };
+		04A012D028F969B00014EED0 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		04A012D128F969B00014EED0 /* PeoplesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeoplesViewModel.swift; sourceTree = "<group>"; };
+		04A012D228F969B00014EED0 /* PeoplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeoplesViewController.swift; sourceTree = "<group>"; };
+		04A012D328F969B00014EED0 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		04A012D528F969B00014EED0 /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewController.swift; sourceTree = "<group>"; };
+		04A012D628F969B00014EED0 /* PeopleDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +127,7 @@
 		04A0128E28F967CC0014EED0 /* SampleRepo1 */ = {
 			isa = PBXGroup;
 			children = (
+				04A012CE28F969B00014EED0 /* People */,
 				04A012BF28F9692A0014EED0 /* WebService */,
 				04A0128F28F967CC0014EED0 /* AppDelegate.swift */,
 				04A0129128F967CC0014EED0 /* SceneDelegate.swift */,
@@ -154,6 +169,28 @@
 				04A012C628F9692A0014EED0 /* EndPoint.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		04A012CE28F969B00014EED0 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				04A012CF28F969B00014EED0 /* PeopleResponce.swift */,
+				04A012D028F969B00014EED0 /* PeopleTableViewCell.swift */,
+				04A012D128F969B00014EED0 /* PeoplesViewModel.swift */,
+				04A012D228F969B00014EED0 /* PeoplesViewController.swift */,
+				04A012D328F969B00014EED0 /* People.swift */,
+				04A012D428F969B00014EED0 /* PeopleDetails */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		04A012D428F969B00014EED0 /* PeopleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				04A012D528F969B00014EED0 /* PeopleDetailsViewController.swift */,
+				04A012D628F969B00014EED0 /* PeopleDetailsViewModel.swift */,
+			);
+			path = PeopleDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,14 +324,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A012D728F969B00014EED0 /* PeopleResponce.swift in Sources */,
 				04A012CB28F9692A0014EED0 /* ServiceError.swift in Sources */,
+				04A012DC28F969B00014EED0 /* PeopleDetailsViewController.swift in Sources */,
 				04A0129428F967CC0014EED0 /* ViewController.swift in Sources */,
+				04A012DA28F969B00014EED0 /* PeoplesViewController.swift in Sources */,
+				04A012DB28F969B00014EED0 /* People.swift in Sources */,
 				04A012CD28F9692A0014EED0 /* EndPoint.swift in Sources */,
 				04A012CC28F9692A0014EED0 /* ImageCacher.swift in Sources */,
 				04A0129028F967CC0014EED0 /* AppDelegate.swift in Sources */,
 				04A012C928F9692A0014EED0 /* ImageDownLoader.swift in Sources */,
 				04A0129228F967CC0014EED0 /* SceneDelegate.swift in Sources */,
+				04A012D828F969B00014EED0 /* PeopleTableViewCell.swift in Sources */,
+				04A012D928F969B00014EED0 /* PeoplesViewModel.swift in Sources */,
 				04A012C828F9692A0014EED0 /* Servicable.swift in Sources */,
+				04A012DD28F969B00014EED0 /* PeopleDetailsViewModel.swift in Sources */,
 				04A012CA28F9692A0014EED0 /* ServiceManager.swift in Sources */,
 				04A012C728F9692A0014EED0 /* ImageManager.swift in Sources */,
 			);
