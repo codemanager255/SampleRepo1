@@ -16,6 +16,13 @@
 		04A012A728F967CF0014EED0 /* SampleRepo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012A628F967CF0014EED0 /* SampleRepo1Tests.swift */; };
 		04A012B128F967CF0014EED0 /* SampleRepo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012B028F967CF0014EED0 /* SampleRepo1UITests.swift */; };
 		04A012B328F967CF0014EED0 /* SampleRepo1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012B228F967CF0014EED0 /* SampleRepo1UITestsLaunchTests.swift */; };
+		04A012C728F9692A0014EED0 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C028F9692A0014EED0 /* ImageManager.swift */; };
+		04A012C828F9692A0014EED0 /* Servicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C128F9692A0014EED0 /* Servicable.swift */; };
+		04A012C928F9692A0014EED0 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C228F9692A0014EED0 /* ImageDownLoader.swift */; };
+		04A012CA28F9692A0014EED0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C328F9692A0014EED0 /* ServiceManager.swift */; };
+		04A012CB28F9692A0014EED0 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C428F9692A0014EED0 /* ServiceError.swift */; };
+		04A012CC28F9692A0014EED0 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C528F9692A0014EED0 /* ImageCacher.swift */; };
+		04A012CD28F9692A0014EED0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A012C628F9692A0014EED0 /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		04A012AC28F967CF0014EED0 /* SampleRepo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleRepo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A012B028F967CF0014EED0 /* SampleRepo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepo1UITests.swift; sourceTree = "<group>"; };
 		04A012B228F967CF0014EED0 /* SampleRepo1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepo1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04A012C028F9692A0014EED0 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		04A012C128F9692A0014EED0 /* Servicable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servicable.swift; sourceTree = "<group>"; };
+		04A012C228F9692A0014EED0 /* ImageDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownLoader.swift; sourceTree = "<group>"; };
+		04A012C328F9692A0014EED0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		04A012C428F9692A0014EED0 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		04A012C528F9692A0014EED0 /* ImageCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+		04A012C628F9692A0014EED0 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		04A0128E28F967CC0014EED0 /* SampleRepo1 */ = {
 			isa = PBXGroup;
 			children = (
+				04A012BF28F9692A0014EED0 /* WebService */,
 				04A0128F28F967CC0014EED0 /* AppDelegate.swift */,
 				04A0129128F967CC0014EED0 /* SceneDelegate.swift */,
 				04A0129328F967CC0014EED0 /* ViewController.swift */,
@@ -125,6 +140,20 @@
 				04A012B228F967CF0014EED0 /* SampleRepo1UITestsLaunchTests.swift */,
 			);
 			path = SampleRepo1UITests;
+			sourceTree = "<group>";
+		};
+		04A012BF28F9692A0014EED0 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				04A012C028F9692A0014EED0 /* ImageManager.swift */,
+				04A012C128F9692A0014EED0 /* Servicable.swift */,
+				04A012C228F9692A0014EED0 /* ImageDownLoader.swift */,
+				04A012C328F9692A0014EED0 /* ServiceManager.swift */,
+				04A012C428F9692A0014EED0 /* ServiceError.swift */,
+				04A012C528F9692A0014EED0 /* ImageCacher.swift */,
+				04A012C628F9692A0014EED0 /* EndPoint.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A012CB28F9692A0014EED0 /* ServiceError.swift in Sources */,
 				04A0129428F967CC0014EED0 /* ViewController.swift in Sources */,
+				04A012CD28F9692A0014EED0 /* EndPoint.swift in Sources */,
+				04A012CC28F9692A0014EED0 /* ImageCacher.swift in Sources */,
 				04A0129028F967CC0014EED0 /* AppDelegate.swift in Sources */,
+				04A012C928F9692A0014EED0 /* ImageDownLoader.swift in Sources */,
 				04A0129228F967CC0014EED0 /* SceneDelegate.swift in Sources */,
+				04A012C828F9692A0014EED0 /* Servicable.swift in Sources */,
+				04A012CA28F9692A0014EED0 /* ServiceManager.swift in Sources */,
+				04A012C728F9692A0014EED0 /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
